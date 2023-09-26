@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Alegreya', serif;
+}
+
+h2,h3,h4{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.8em;
+    font-weight: bolder;
+    line-height: 1.2em;
+}
+
+div p{
+    font-family: 'Source Sans 3', sans-serif;
+    line-height: 1.5em;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+header div{
+    display: inline-block;
+    vertical-align: middle;  
+}
+
+nav{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+nav li{
+    display: inline-block;
+    padding: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+footer div{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer h4{
+    color: cyan;
+    font-weight: 900;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.btnSecondary{
+    background-color: white;
+    border-color: blue;
+    border-style: solid;
+    color: blue;
+}
+
+.btnEnviar{
+    background-color: cyan;
+}
+
+.flexRow{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.arriba{
+    align-items: start;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.darkSection{
+    background-color: #BFBFBF;
+    padding: 20px;
+}
+
+.pasos{
+    font-weight: bolder;
+}
+
+.recomended{
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.recomended p{
+    font-size: smaller;
+}
+
+.recoAutor{
+    font-weight: bolder;
+    font-size: small;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.inline-block div{
+    display: inline-block;
+}
+
+.darkSection article{
+    padding: 2px;
+    display: inline-block;
+    width: 45%;
+}
+
+.espaciado{
+    padding: 20px;
+}
+
+.bigText{
+    font-size: 1.3em;
+    line-height: 1.5;
+}

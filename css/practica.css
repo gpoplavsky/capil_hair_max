@@ -1,0 +1,41 @@
+.gridPadre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,  1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    align-items: start; /*posicion vertical el div respecto a la grilla*/
+    justify-items: center; /*posicion horizontal el div respecto a la grilla*/
+    align-content: top; /*posicion vertical la grilla respecto a la página web*/
+    justify-content: center; /*posicion horizontal de la grilla respecto a la página web*/
+}
+.gridItem{
+    background-color: yellowgreen;
+    border: solid green;
+    height: 250px;
+    /*width: 250px;*/
+}
+
+/*Pseudoclases
+selector:pseudoclase{
+    propiedad: valor;
+}
+
+por ejemplo:*/
+
+a:hover{
+    color: brown;
+    border-bottom: solid brown 1px;
+}
+
+.visited:visited{
+    color: aqua;
+}
+
+/*PseudoElementos
+selector::pseudoelemento{
+    propiedad: valor;
+}
+
+por ejemplo:*/
+
