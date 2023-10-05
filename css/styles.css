@@ -1,9 +1,11 @@
+/*Reset inicial*/
+
 *{
     margin: 0;
     padding: 0;
-    align-content: center;
-    align-items: center;
 }
+
+/*Estilos tipográficos*/
 
 h1{
     font-family: 'Alegreya Sans', sans-serif;
@@ -21,29 +23,15 @@ div p{
     line-height: 1.5em;
 }
 
-ul{
-    list-style: none;
-}
+/* Estructura principal */
 
 header{
-    position: sticky;
-    top: 0;
     background-color: black;
     color: #F2F2F2;
 }
 
-header div{
-    display: inline-block;
-    vertical-align: middle;  
-}
-
 nav{
     font-family: 'Source Sans 3', sans-serif;
-}
-
-nav li{
-    display: inline-block;
-    padding: 5px;
 }
 
 nav a{
@@ -73,12 +61,16 @@ footer a{
     color: #F2F2F2;
 }
 
+/* Estilos de elementos principales */
+
 button{
     background-color: #D9B13B;
     color: #F2F2F2;
     margin-right: 10px;
     padding: 10px;
 }
+
+/* Personalización de Bootstrap */
 
 .bg-dark-nav{
     background-color: black;
@@ -88,6 +80,8 @@ button{
     display: flex;
     justify-content: end;
 }
+
+/* Clases personalizadas */
 
 .btnSecondary{
     background-color: #F2F2F2;
@@ -110,10 +104,10 @@ button{
     align-items: start;
 }
 
-.flexColumn{
+/*.flexColumn{
     display: flex;
     flex-direction: column;
-}
+}*/
 
 .darkSection{
     background-color: #0D0D0D;
@@ -125,16 +119,13 @@ button{
     font-weight: bolder;
 }
 
-.recomended{
+.card-recomended{
     font-family: 'Source Sans 3', sans-serif;
     background-color: #F2F2F2;
     align-items: center;
     align-content: center;
     text-align: center;
-}
-
-.recomended p{
-    font-size: smaller;
+    padding: 10px;
     color: #0D0D0D;
 }
 
@@ -147,16 +138,6 @@ button{
     text-align: center;
 }
 
-.inline-block div{
-    display: inline-block;
-}
-
-.darkSection article{
-    padding: 2px;
-    display: inline-block;
-    width: 45%;
-}
-
 .espaciado{
     padding: 20px;
 }
@@ -164,4 +145,35 @@ button{
 .bigText{
     font-size: 1.3em;
     line-height: 1.5;
+}
+
+.imagen-col-12{
+    width: 100%;
+}
+
+.hidden img{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.consulta {
+    height: 150px;
+    align-content: center;
+    align-items: center;
+}
+
+/* Medias Queries */
+
+@media only screen and (max-width: 576px) {
+    .hidden{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .consulta {
+        height: 200px;
+    }
 }
