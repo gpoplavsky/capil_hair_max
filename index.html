@@ -9,49 +9,45 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
     <link rel="manifest" href="./assets/img/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;0,800;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@800;900&family=Alegreya:ital,wght@0,400;0,700;0,800;1,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="flexRow">
-        <div>
-            <h1>CAPIL HAIR MAX</h1>
-        </div>
-        <div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar d-flex justify-content-end sticky-top navbar-expand-lg navbar-dark bg-dark-nav">
+            <a class="navbar-brand" href="/index.html"><img src="./assets/img/black-logo.png" alt="Capil Hair Max" class="d-inline-block align-center" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/embajadores.html">Embajadores</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main class="flexColumn">
         <section class="flexRow arriba">
             <div class="espaciado bigText">
                 <h2>Recuperación capilar descentralizada</h2>
                 <br>
-                <p>Nec massa viverra eget feugiat pellentesque. Feugiat adipiscing massa vitae auctor mi massa. Sodales libero viverra cursus sed duis luctus nulla. In malesuada vulputate pharetra ipsum orci.</p>
+                <p>Contamos con la experiencia y destreza de las principales empresas en la industria de pelo, con valores asequibles para que todos puedan recuperar lo que les pertenece de manera confiable y segura.</p>
                 <br>
                 <a href="#comienza"><button>Comenzar</button></a>
                 <a href="./pages/servicios.html"><button class="btnSecondary">Ver mas</button></a>
@@ -63,7 +59,7 @@
         <section class="darkSection centrado">
             <div>
                 <h3>Las empresas líderes en un solo lugar</h3>
-                <p>Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.</p>
+                <p>Somos la primera app que reúne a los profesionales independientes y empresas líderes de la industria de pelo en un solo lugar, donde todos compiten por brindar el mejor servicio al precio más competitivo.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ff_OUpEb-Rk?si=1BI6QepGCrYwlepH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
             </div>
             <div>
@@ -78,7 +74,7 @@
                     </div>
                     <div class="textDer">
                         <h3>Recupera tu pelo, pagando menos</h3>
-                        <p>Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.</p>
+                        <p>La cirugía que realizamos es siempre al Máximo de Unidades Foliculares que nos brinda la zona donante en cada paciente. Descarga la app y comienza tu consulta ahora mismo para recibir un asesoramiento personalizado sin costo.</p>
                         <a href="#comienza"><button>Comenzar</button></a>
                         <a href="./pages/servicios.html"><button class="btnSecondary">Ver mas</button></a>
                     </div>   
@@ -90,7 +86,7 @@
             <div>
                 <div class="centrado">
                     <h3>Crea tu tratamiento a medida</h3>
-                    <p>Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.</p>
+                    <p>Recuperación capilar descentralizada significa que podrás crear tu tratamiento a medida, sin importar con qué presupuesto cuentes. A través de nuestra aplicación podrás solicitar turnos los 365 días del año para estudios pre quirúrgicos y quirúrgicos.</p>
                 </div>
             </div>
             <div class="inline-block">
@@ -98,28 +94,28 @@
                     <img src="./assets/img/ch_proyectoweb-icons/1.png">
                     <div>
                         <p class="pasos">Paso 1</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Comienza tu consulta.</p>
                     </div>
                 </div>
                 <div>
                     <img src="./assets/img/ch_proyectoweb-icons/2.png">
                     <div>
                         <p class="pasos">Paso 2</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Agenda de estudios.</p>
                     </div>
                 </div>
                 <div>
                     <img src="./assets/img/ch_proyectoweb-icons/3.png">
                     <div>
                         <p class="pasos">Paso 3</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Reserva tu tratamiento.</p>
                     </div>
                 </div>
                 <div>
                     <img src="./assets/img/ch_proyectoweb-icons/4.png">
                     <div>
                         <p class="pasos">Paso 4</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Se realiza el trasplante.</p>
                     </div>
                 </div>
             </div>
@@ -131,26 +127,26 @@
             <article>
                 <article class="recomended">
                     <img src="./assets/img/ch_proyectoweb-logos/1.png">
-                    <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                    <p>Queremos devolverle a la gente lo que les pertenece, por eso, creemos en bajar los costos de los implantes capilares mediante la descentralización.</p>
                     <img src="./assets/img/ch_proyectoweb-icons/person.png">
-                    <p class="recoAutor">Author Name</p>
-                    <p>Role</p>
+                    <p class="recoAutor">Maximiliano Molentino</p>
+                    <p>Instrumentador Quirúrgico</p>
                 </article>
             </article>
             <article>
                 <article class="recomended">
                     <img src="./assets/img/ch_proyectoweb-logos/2.png">
-                    <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                    <p>La creciente demanda de los consumidores mobile abre las puertas al desarrollo Med-Tech, que no es más ni menos que la tecnología al servicio de los profesionales médicos.</p>
                     <img src="./assets/img/ch_proyectoweb-icons/person.png">
-                    <p class="recoAutor">Author Name</p>
-                    <p>Role</p>
+                    <p class="recoAutor">Guillermo Poplavsky</p>
+                    <p>App Developer</p>
                 </article>   
             </article>
         </section>
         <section class="inline-block">
             <div>
                 <h3 id="comienza" class="espaciado">Comienza tu consulta gratuita</h3>
-                <p>Rhoncus morbi et augue nec, in id ullamcorper at sit.</p>
+                <p>Descarga la app y comienza tu consulta gratuita ya mismo.</p>
             </div>
             <div>
                 <div>
@@ -210,5 +206,8 @@
         </div>
         <p style="text-align: center;">Copyright © 2023 Capil Hair Max</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
