@@ -44,48 +44,44 @@
     </header>
 
     <main>
-        <section>
-            <h2>Formulario de contacto</h2>
-            <form action="" method="" enctype="text/plain">
-                <fieldset>
-                    <label for="">Nombre y apellido</label>
-                    <input type="text">
-                </fieldset>
-                <fieldset>
-                    <label for="">Email</label>
-                    <input type="email">
-                </fieldset>
-                <fieldset>
-                    <label for="">Dejanos tu mensaje</label>
-                    <textarea></textarea>
-                </fieldset>
-                <fieldset>
-                    <legend>Como retiras?</legend>
-                    <div>Retiro en sucursal</div>
-                    <input type="radio" name="retiro" value="sucursal">
-                    <div>Envio a domicilio</div>
-                    <input type="radio" name="envio" value="domicilio">
-                </fieldset>
-                
-                <input type="text">
-                <input type="password">
-                <input type="email">
-                <div>Turno diurno</div>
-                <input type="radio" value="dia">
-                <div>Turno nocturno</div>
-                <input type="radio" value="noche"> 
-                <selec name="talles" id="">
-                    <option value="s">Small</option>
-                    <option value="m">Medium</option>
-                    <option value="l">Large</option>
-                    <option value="xl">Extra large</option>
-                </selec>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Restablecer">
-                <input type="button" value="Boton JS">
-
-            </form>
+        <section class="container-fluid margin-bottom-40 margin-top-40">
+            <h2 class="centrado">Formulario de contacto</h2>
+            <form class="espaciado">
+                <div class="row">
+                    <div class="col">
+                        <label for="nombreInput">Nombre</label> 
+                        <input type="text" class="form-control is-invalid" id="nombreInput" placeholder="Juan">
+                    </div>
+                    <div class="col">
+                        <label for="apellidoInput">Apellido</label>
+                        <input type="text" class="form-control is-valid" id="apellidoInput" placeholder="Perez">
+                    </div>
+                </div>                
+                <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input type="email" class="form-control is-invalid" id="emailInput" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Dejanos tu mensaje</label>
+                    <textarea class="form-control is-invalid" id="mensaje" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary btnEnviar" type="submit">Enviar mensaje</button>
+              </form>
+        </section>
+        <section class="container-fluid darkSection">
+            <div class="row">
+                <div id="comienza" class="col col-md-8">
+                    <h2>Descarga la app</h2>
+                    <br>
+                    <p>Nec massa viverra eget feugiat pellentesque. Feugiat adipiscing massa vitae auctor mi massa. Sodales libero viverra cursus sed duis luctus nulla. In malesuada vulputate pharetra ipsum orci.</p>
+                    <br>
+                    <a href="https://www.apple.com/la/app-store/" target="_blank"><img src="../assets/img/ch_proyectoweb-logos-stores/AppStore.png" alt="Descarga en AppStore"></a>
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="../assets/img/ch_proyectoweb-logos-stores/PlayStore.png" alt="Descarga en PlayStore"></a>                          
+                </div>   
+                <div class="col-md-4">
+                    <img class="descarga" src="../assets/img/ch_proyectoweb-1.png" alt="Descarga nuestra App">
+                </div> 
+            </div>
         </section>
     </main>
     <footer>
@@ -134,7 +130,7 @@
                 </select>
             </form>
         </div>
-        <p style="text-align: center;">Copyright © 2023 Capil Hair Max</p>
+        <p class="centrado">Copyright © 2023 Capil Hair Max</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
