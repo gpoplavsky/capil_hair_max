@@ -1,0 +1,11 @@
+{
+  "name": "ch_proyectoweb",
+  "version": "1.0.0",
+  "description": "Segunda pre entrega de Guillermo Poplavsky",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
