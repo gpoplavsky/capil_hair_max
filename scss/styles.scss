@@ -79,7 +79,12 @@ footer{
         }
         a {
             text-decoration: none;
-            color: $color-2;  
+            color: $color-2;
+            &:hover {
+                text-decoration: none;
+                text-shadow: $color-3;
+                color: $color-3;
+            }  
         }     
     }
 }

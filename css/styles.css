@@ -72,6 +72,12 @@ footer div a {
   color: #F2F2F2;
 }
 
+footer div a:hover {
+  text-decoration: none;
+  color: #D9B13B;
+  text-shadow: #D9B13B;
+}
+
 /* Estilos de elementos principales */
 button {
   background-color: #D9B13B;
