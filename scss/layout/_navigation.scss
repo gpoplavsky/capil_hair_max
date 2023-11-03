@@ -1,0 +1,23 @@
+nav {
+    font: $fuente;
+    a {
+        text-decoration: none;
+        color: $color-2;
+        &:hover {
+            color: $color-3;
+        }    
+    }
+}
+.bg-dark-nav {
+    background-color: black;
+}
+.justify-content-end-nav {
+    display: flex;
+    justify-content: end;  
+}
+.active-link {
+    background-color: $color-3;
+    &:hover {
+        color: $color-1
+    }
+}

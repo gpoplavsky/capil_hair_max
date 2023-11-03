@@ -1,0 +1,41 @@
+footer{
+    background-color: #0D0D0D;
+    background-attachment: fixed;
+    background-size: cover;
+    color: $color-2;
+    font-family: $fuente;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    hr {
+        height: 2px;
+        background-color: $color-2;
+    }
+    div {
+        display: inline-block;
+        padding: 10px;
+        vertical-align: top;
+        h4{
+            color: $color-3;
+            font-weight: 900;    
+        }
+        a {
+            text-decoration: none;
+            color: $color-2;
+            &:hover {
+                text-decoration: none;
+                text-shadow: $color-3;
+                color: $color-3;
+            }  
+        }
+        img {
+            height: 40px;
+            width: 40px;
+        }     
+    }
+}
+
+.footMap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

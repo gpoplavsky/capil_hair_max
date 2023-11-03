@@ -1,0 +1,232 @@
+/* Clases personalizadas */
+
+.flexRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;  
+}
+
+.arriba {
+    align-items: start;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.darkSection {
+    background-color: #0D0D0D;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230D0D0D'/%3E%3Cstop offset='1' stop-color='%230D0D0D'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23D9B13B' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23D9B13B' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    color: $color-3;    
+}
+
+.pasos {
+    font-weight: bolder;
+}
+
+.card-recomended {
+    font-family: $fuente;
+    background-color: $color-2;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    color: $color-1;
+}
+
+.recoAutor {
+    font-weight: bolder;
+    font-size: small;  
+}
+
+.centrado {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.espaciado {
+    padding: 20px;
+}
+
+.bigText {
+    font-size: 1.3em;
+    line-height: 1.5;  
+}
+
+.smallText {
+    font-size: 12px;
+    line-height: 80%;  
+}
+
+.slogan {
+    color: $color-3;
+    font-family: $title-font;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 80%;
+}
+
+.imagen-col-12 {
+    width: 100%;
+}
+
+.imagen-col-6 {
+    width: 50%;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.hidden img {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin-top: 4px;  
+}
+
+.consulta {
+    height: 150px;
+    align-content: center;
+    align-items: center;
+}
+
+.icons {
+    height: 40px;
+    width: 40px;
+}
+
+.descarga {
+    max-height: 200px;
+    padding: 0px;
+}
+
+.seccionDescarga {
+    background-color: $color-1;
+    color: $color-3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p {
+        color: $color-2;
+    }
+}
+
+/* tarjeta card client con efecto movimiento */
+
+.card-client {
+    background: $color-1;
+    max-width: 400px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid $color-2;
+    box-shadow: 0 6px 10px $color-2;
+    border-radius: 10px;
+    text-align: center;
+    color: $color-2;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.user-picture {
+    overflow: hidden;
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid $color-3;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    svg {
+        width: 2.5rem;
+        fill: currentColor;
+      }
+}
+
+.name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    span {
+        display: block;
+        font-weight: 200;
+        font-size: 16px;
+      }
+}
+
+.social-media {
+    & :before {
+        content: " ";
+        width: 100%;
+        height: 2px;
+        margin: 20px 0;
+        background: $color-2;    
+    }
+    a {
+        position: relative;
+        margin-right: 15px;
+        text-decoration: none;
+        color: inherit;
+        & :last-child {
+            margin-right: 0;
+        }
+        svg {
+            width: 1.1rem;
+            fill: currentColor; 
+        }
+    }
+}
+  
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+    background: $color-3;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -90%);
+    transition: all 0.2s ease;
+    z-index: 1;
+    & :after {
+        content: " ";
+        position: absolute;
+        bottom: 1px;
+        left: 50%;
+        border: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: transparent;
+        transform: translate(-50%, 100%);
+    }
+}
+  
+.social-media a .tooltip-social:after {
+    border-top-color: $color-2;
+}
+  
+.social-media a:hover .tooltip-social {
+    opacity: 1;
+    transform: translate(-50%, -130%);
+}
